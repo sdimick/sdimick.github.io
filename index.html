@@ -18,10 +18,46 @@
   <style>
     html,body {
       font-family: "Roboto", sans-serif;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: #E2E2E2;
     }
-    h1,h2,h3,h4,h5,h6,p {
+    header {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+    footer {
+      bottom: 0;
+      height: 20px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 5px;
+      margin: 0;
+    }
+    #main-wrapper {
+      box-sizing: border-box;
+      min-height: 100%;
+      padding: 0 0 100px;
+      position: relative;
+    }
+    h1,h3,h4,h5,h6,p {
       font-family: "Roboto", sans-serif;
       text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    h2 {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin: 0;
     }
     img {
       height: 96px;
@@ -54,59 +90,74 @@
   </style>
 </head>
 <body>
-  <h1>sethdimick.com</h1>
-  <h2>Glad you found me! Connect with me:</h2>
-  <div align="center"><table>
+  <div id="main-wrapper">
+    <header>
+      <h1>sethdimick.com</h1>
+      <p>Disciple. Husband. Dad. Data Scientist.</p>
+    </header>
+    <h2>Glad you made it! Connect with me.</h2>
+    <div align="center"><table>
+      <tr>
+        <td><a href="https://www.linkedin.com/in/dimick/">
+          <img src="images/In-2C-128px-R.png" alt="LinkedIn Logo">
+        </a></td>
+        <td><a href="https://www.linkedin.com/in/dimick/">
+          <b>LinkedIn</b><br>
+          @dimick
+        </a></td>
+      </tr>
+      <tr><td height:64px></td></tr>
+      <tr>
+        <td><a href="https://www.instagram.com/seth.dimick/">
+          <img src="images/IG_Glyph_Fill.png" alt="Instagram Logo">
+        </a></td>
+        <td><a href="https://www.instagram.com/seth.dimick/">
+          <b>Instagram</b><br>
+          @seth.dimick
+        </a></td>
+      </tr>
+      <tr><td height:64px></td></tr>
+      <tr>
+        <td><a href="https://github.com/sdimick">
+          <img src="images/Octocat.png" alt="GitHub Octocat Logo">
+        </a></td>
+        <td><a href="https://github.com/sdimick">
+          <b>GitHub</b><br>
+          @sdimick
+        </a></td>
+      </tr>
+      <tr><td height:64px></td></tr>
+        <tr>
+          <td><a href="https://www.facebook.com/seth.dimick">
+            <img src="images/flogo_RGB_HEX-1024.png" alt="Facebook Logo">
+          </a></td>
+          <td><a href="https://www.facebook.com/seth.dimick">
+            <b>Facebook</b><br>
+            @seth.dimick
+          </a></td>
+        </tr>
+        <tr><td height:64px></td></tr>
+      <tr>
+        <td><a href="https://twitter.com/SethDimick">
+          <img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter Logo">
+        </a></td>
+        <td><a href="https://twitter.com/SethDimick">
+          <b>Twitter</b><br>
+          @SethDimick
+        </a></td>
+      </tr>
+      <tr><td height:64px></td></tr>
     <tr>
-      <td><a href="https://www.facebook.com/seth.dimick">
-        <img src="images/flogo_RGB_HEX-1024.png" alt="Facebook Logo">
+      <td><a href="http://www.downtowncornerstone.org/">
+        <img src="images/DCC_1.png" alt="DCC Logo">
       </a></td>
-      <td><a href="https://www.facebook.com/seth.dimick">
-        <b>Facebook</b><br>
-        @seth.dimick
+      <td><a href="http://www.downtowncornerstone.org/">
+        <b>Church</b><br>
+        Downtown<br>Cornerstone
       </a></td>
     </tr>
-    <tr><td height:64px></td></tr>
-    <tr>
-      <td><a href="https://www.linkedin.com/in/dimick/">
-        <img src="images/In-2C-128px-R.png" alt="LinkedIn Logo">
-      </a></td>
-      <td><a href="https://www.linkedin.com/in/dimick/">
-        <b>LinkedIn</b><br>
-        @dimick
-      </a></td>
-    </tr>
-    <tr><td height:64px></td></tr>
-    <tr>
-      <td><a href="https://www.instagram.com/seth.dimick/">
-        <img src="images/IG_Glyph_Fill.png" alt="Instagram Logo">
-      </a></td>
-      <td><a href="https://www.instagram.com/seth.dimick/">
-        <b>Instagram</b><br>
-        @seth.dimick
-      </a></td>
-    </tr>
-    <tr><td height:64px></td></tr>
-    <tr>
-      <td><a href="https://github.com/sdimick">
-        <img src="images/Octocat.png" alt="GitHub Octocat Logo">
-      </a></td>
-      <td><a href="https://github.com/sdimick">
-        <b>GitHub</b><br>
-        @sdimick
-      </a></td>
-    </tr>
-    <tr><td height:64px></td></tr>
-    <tr>
-      <td><a href="https://twitter.com/SethDimick">
-        <img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter Logo">
-      </a></td>
-      <td><a href="https://twitter.com/SethDimick">
-        <b>Twitter</b><br>
-        @SethDimick
-      </a></td>
-    </tr>
-  </table></div>
-  <p>&copy 2019 Seth Dimick</p>
+    </table></div>
+    <footer>&copy 2019 Seth Dimick</footer>
+  </div>
 </body>
 </html>
