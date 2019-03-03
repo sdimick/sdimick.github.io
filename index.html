@@ -1,163 +1,173 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134708632-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html id="dynamic">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134708632-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-134708632-1');
+    </script>
+    <script src="mobile-detect.js"></script>
+    <script>
+      var md = new MobileDetect(window.navigator.userAgent);
+      if (md.mobile()) {
+        document.getElementById("dynamic").style.transform = "scale(1.5) translateY(125px)";
+      }
+    </script>
+    <title>Connect With Seth Dimick</title>
+    <meta charset="UTF-8">
 
-    gtag('config', 'UA-134708632-1');
-  </script>
+    <style>
+      html,body {
+        font-family: "Roboto", sans-serif;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #E2E2E2;
+        transform origin: right center 0;
+        transform: scale(1) translateY(0px);
+      }
+      #dynamic {
+        transform: scale(1) translateY(0px);
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+      footer {
+        bottom: 0;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin: 0;
+      }
+      #main-wrapper {
+        box-sizing: border-box;
+        min-height: 100%;
+        padding: 0 0 100px;
+        position: relative;
+      }
+      h1,h3,h4,h5,h6,p {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+      h2 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin: 0;
+      }
+      img {
+        height: 96px;
+      }
+      img:hover {
+        height: 100px;
+      }
+      img:active {
+        height: 100px;
+      }
+      tr:nth-child(odd) {
+        height: 106px;
+      }
+      tr:nth-child(even) {
+        height: 38px;
+      }
+      td:nth-child(1) {
+        width: 144px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:active {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
 
-  <title>Connect With Seth Dimick</title>
-
-  <meta charset="UTF-8">
-
-  <style>
-    html,body {
-      font-family: "Roboto", sans-serif;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      background-color: #E2E2E2;
-    }
-    header {
-      background-color: black;
-      color: white;
-      padding: 10px;
-    }
-    footer {
-      bottom: 0;
-      height: 20px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      background-color: black;
-      color: white;
-      padding: 5px;
-      margin: 0;
-    }
-    #main-wrapper {
-      box-sizing: border-box;
-      min-height: 100%;
-      padding: 0 0 100px;
-      position: relative;
-    }
-    h1,h3,h4,h5,h6,p {
-      font-family: "Roboto", sans-serif;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-    }
-    h2 {
-      font-family: "Roboto", sans-serif;
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 40px;
-      margin: 0;
-    }
-    img {
-      height: 96px;
-    }
-    img:hover {
-      height: 100px;
-    }
-    img:active {
-      height: 100px;
-    }
-    tr:nth-child(odd) {
-      height: 106px;
-    }
-    tr:nth-child(even) {
-      height: 38px;
-    }
-    td:nth-child(1) {
-      width: 144px;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    a:active {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div id="main-wrapper">
-    <header>
-      <h1>sethdimick.com</h1>
-      <p>Disciple. Husband. Dad. Data Scientist.</p>
-    </header>
-    <h2>Glad you made it! Connect with me.</h2>
-    <div align="center"><table>
-      <tr>
-        <td><a href="https://www.linkedin.com/in/dimick/">
-          <img src="images/In-2C-128px-R.png" alt="LinkedIn Logo">
-        </a></td>
-        <td><a href="https://www.linkedin.com/in/dimick/">
-          <b>LinkedIn</b><br>
-          @dimick
-        </a></td>
-      </tr>
-      <tr><td height:64px></td></tr>
-      <tr>
-        <td><a href="https://www.instagram.com/seth.dimick/">
-          <img src="images/IG_Glyph_Fill.png" alt="Instagram Logo">
-        </a></td>
-        <td><a href="https://www.instagram.com/seth.dimick/">
-          <b>Instagram</b><br>
-          @seth.dimick
-        </a></td>
-      </tr>
-      <tr><td height:64px></td></tr>
-      <tr>
-        <td><a href="https://github.com/sdimick">
-          <img src="images/Octocat.png" alt="GitHub Octocat Logo">
-        </a></td>
-        <td><a href="https://github.com/sdimick">
-          <b>GitHub</b><br>
-          @sdimick
-        </a></td>
-      </tr>
-      <tr><td height:64px></td></tr>
+  <body>
+    <div id="main-wrapper">
+      <header>
+        <h1>sethdimick.com</h1>
+        <p>Disciple. Husband. Dad. Data Scientist.</p>
+      </header>
+      <h2>Glad you made it! Connect with me.</h2>
+      <div align="center"><table>
         <tr>
-          <td><a href="https://www.facebook.com/seth.dimick">
-            <img src="images/flogo_RGB_HEX-1024.png" alt="Facebook Logo">
+          <td><a href="https://www.linkedin.com/in/dimick/">
+            <img src="images/In-2C-128px-R.png" alt="LinkedIn Logo">
           </a></td>
-          <td><a href="https://www.facebook.com/seth.dimick">
-            <b>Facebook</b><br>
+          <td><a href="https://www.linkedin.com/in/dimick/">
+            <b>LinkedIn</b><br>
+            @dimick
+          </a></td>
+        </tr>
+        <tr><td height:64px></td></tr>
+        <tr>
+          <td><a href="https://www.instagram.com/seth.dimick/">
+            <img src="images/IG_Glyph_Fill.png" alt="Instagram Logo">
+          </a></td>
+          <td><a href="https://www.instagram.com/seth.dimick/">
+            <b>Instagram</b><br>
             @seth.dimick
           </a></td>
         </tr>
         <tr><td height:64px></td></tr>
+        <tr>
+          <td><a href="https://github.com/sdimick">
+            <img src="images/Octocat.png" alt="GitHub Octocat Logo">
+          </a></td>
+          <td><a href="https://github.com/sdimick">
+            <b>GitHub</b><br>
+            @sdimick
+          </a></td>
+        </tr>
+        <tr><td height:64px></td></tr>
+          <tr>
+            <td><a href="https://www.facebook.com/seth.dimick">
+              <img src="images/flogo_RGB_HEX-1024.png" alt="Facebook Logo">
+            </a></td>
+            <td><a href="https://www.facebook.com/seth.dimick">
+              <b>Facebook</b><br>
+              @seth.dimick
+            </a></td>
+          </tr>
+          <tr><td height:64px></td></tr>
+        <tr>
+          <td><a href="https://twitter.com/SethDimick">
+            <img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter Logo">
+          </a></td>
+          <td><a href="https://twitter.com/SethDimick">
+            <b>Twitter</b><br>
+            @SethDimick
+          </a></td>
+        </tr>
+        <tr><td height:64px></td></tr>
       <tr>
-        <td><a href="https://twitter.com/SethDimick">
-          <img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter Logo">
+        <td><a href="http://www.downtowncornerstone.org/">
+          <img src="images/DCC_1.png" alt="DCC Logo">
         </a></td>
-        <td><a href="https://twitter.com/SethDimick">
-          <b>Twitter</b><br>
-          @SethDimick
+        <td><a href="http://www.downtowncornerstone.org/">
+          <b>Church</b><br>
+          Downtown<br>Cornerstone
         </a></td>
       </tr>
-      <tr><td height:64px></td></tr>
-    <tr>
-      <td><a href="http://www.downtowncornerstone.org/">
-        <img src="images/DCC_1.png" alt="DCC Logo">
-      </a></td>
-      <td><a href="http://www.downtowncornerstone.org/">
-        <b>Church</b><br>
-        Downtown<br>Cornerstone
-      </a></td>
-    </tr>
-    </table></div>
-    <footer>&copy 2019 Seth Dimick</footer>
-  </div>
-</body>
+      </table></div>
+      <footer>&copy 2019 Seth Dimick</footer>
+    </div>
+  </body>
 </html>
