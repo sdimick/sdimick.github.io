@@ -1,0 +1,83 @@
+html,body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #E2E2E2;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+footer {
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+#main-wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 0 0 200px;
+  position: relative;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  margin: 0;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+img {
+  height: 192px;
+}
+img:hover {
+  height: 200px;
+}
+img:active {
+  height: 200px;
+}
+tr:nth-child(odd) {
+  height: 212px;
+  font-size: 2em;
+}
+tr:nth-child(even) {
+  height: 76px;
+  font-size: 2em;
+}
+td:nth-child(1) {
+  width: 288px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}

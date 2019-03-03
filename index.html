@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="dynamic">
+<html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134708632-1"></script>
@@ -9,94 +9,10 @@
       gtag('js', new Date());
       gtag('config', 'UA-134708632-1');
     </script>
-    <script src="mobile-detect.js"></script>
-    <script>
-      var md = new MobileDetect(window.navigator.userAgent);
-      if (md.mobile()) {
-        document.getElementById("dynamic").style.transform = "scale(1.5) translateY(125px)";
-      }
-    </script>
+    <script src="scripts/mobile-detect.js"></script>
     <title>Connect With Seth Dimick</title>
     <meta charset="UTF-8">
-
-    <style>
-      html,body {
-        font-family: "Roboto", sans-serif;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: #E2E2E2;
-        transform origin: right center 0;
-        transform: scale(1) translateY(0px);
-      }
-      #dynamic {
-        transform: scale(1) translateY(0px);
-      }
-      header {
-        background-color: black;
-        color: white;
-        padding: 10px;
-      }
-      footer {
-        bottom: 0;
-        height: 20px;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        background-color: black;
-        color: white;
-        padding: 5px;
-        margin: 0;
-      }
-      #main-wrapper {
-        box-sizing: border-box;
-        min-height: 100%;
-        padding: 0 0 100px;
-        position: relative;
-      }
-      h1,h3,h4,h5,h6,p {
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-      }
-      h2 {
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        margin: 0;
-      }
-      img {
-        height: 96px;
-      }
-      img:hover {
-        height: 100px;
-      }
-      img:active {
-        height: 100px;
-      }
-      tr:nth-child(odd) {
-        height: 106px;
-      }
-      tr:nth-child(even) {
-        height: 38px;
-      }
-      td:nth-child(1) {
-        width: 144px;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      a:active {
-        text-decoration: underline;
-      }
-    </style>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="css/desktop.css">
   </head>
 
   <body>
@@ -171,3 +87,10 @@
     </div>
   </body>
 </html>
+
+<script>
+  var md = new MobileDetect(window.navigator.userAgent);
+  if (md.mobile()) {
+    document.getElementById("pagestyle").setAttribute("href", "css/mobile.css");
+  }
+</script>
